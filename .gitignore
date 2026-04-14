@@ -1,42 +1,69 @@
 ```
-# Moodle-specific ignores
-local/*/db/install.xml
-local/*/_backup/
-local/*/_restore/
-local/*/yui/build/
+# Compressed archives
+*.zip
 
-# Dependencies
-node_modules/
-vendor/
-composer.lock
-
-# Build artifacts
-build/
-dist/
-*.min.js
-*.min.css
-
-# Logs and temp files
-*.log
-*.tmp
-*.swp
-
-# Environment
+# Environment files
 .env
 .env.local
 *.env.*
 
-# Editors
+# Logs
+*.log
+
+# Editor/IDE files
 .vscode/
 .idea/
 *.swp
 *.swo
+*.tmp
 
-# OS
+# Dependencies
+node_modules/
+
+# Build/dist directories
+dist/
+build/
+target/
+
+# Python artifacts
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Java artifacts
+*.class
+*.jar
+*.war
+*.ear
+
+# C/C++ artifacts
+*.o
+*.obj
+*.so
+*.a
+*.dll
+*.exe
+
+# PHP artifacts (if applicable)
+*.php~
+*.php.bak
+
+# Node.js
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Coverage reports
+coverage/
+htmlcov/
+.coverage
+
+# Testing
+.phpunit.result.cache
+.hypothesis/
+
+# OS generated files
 .DS_Store
 Thumbs.db
-
-# Cache
-.cache/
-*.cache
 ```
