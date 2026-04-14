@@ -1,0 +1,151 @@
+/* Custom Analytics Reports Styles */
+
+.customreports-dashboard {
+    background-color: #f5f6fa;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.report-widget {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+}
+
+.report-widget:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+}
+
+.report-widget .card-header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border-radius: 10px 10px 0 0 !important;
+    font-weight: 600;
+}
+
+.report-widget .card-header .btn-link {
+    color: white;
+}
+
+.report-widget .card-header .btn-link:hover {
+    color: #f0f0f0;
+}
+
+.widget-content {
+    min-height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Stat Cards */
+.stat-card {
+    text-align: center;
+    padding: 15px;
+}
+
+.stat-card .stat-value {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #0f6cbf;
+}
+
+.stat-card .stat-label {
+    color: #6c757d;
+    font-size: 0.9rem;
+}
+
+.stat-card .stat-change {
+    font-size: 0.8rem;
+    margin-top: 5px;
+}
+
+.stat-change.positive {
+    color: #28a745;
+}
+
+.stat-change.negative {
+    color: #dc3545;
+}
+
+/* Progress Colors */
+.progress-low {
+    background-color: #dc3545;
+}
+
+.progress-medium {
+    background-color: #ffc107;
+}
+
+.progress-high {
+    background-color: #fd7e14;
+}
+
+.progress-complete {
+    background-color: #28a745;
+}
+
+/* Responsive Grid */
+@media (max-width: 576px) {
+    .customreports-dashboard {
+        padding: 10px;
+    }
+    
+    .report-widget .card-header h5 {
+        font-size: 0.9rem;
+    }
+    
+    .stat-card .stat-value {
+        font-size: 1.5rem;
+    }
+}
+
+/* Dark Mode Support */
+[data-theme="dark"] .customreports-dashboard {
+    background-color: #1a1a2e;
+}
+
+[data-theme="dark"] .report-widget {
+    background-color: #16213e;
+    color: #eee;
+}
+
+/* Print Styles */
+@media print {
+    .report-widget .card-header button {
+        display: none;
+    }
+    
+    .customreports-dashboard {
+        background: white;
+    }
+}
+
+/* Loading Spinner */
+.spinner-border {
+    width: 3rem;
+    height: 3rem;
+}
+
+/* Chart Containers */
+canvas {
+    max-width: 100%;
+}
+
+/* Additional Reports Buttons */
+.btn-block {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    font-weight: 500;
+}
+
+.btn-outline-primary:hover,
+.btn-outline-success:hover,
+.btn-outline-info:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
