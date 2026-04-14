@@ -1,0 +1,42 @@
+```
+# Moodle-specific ignores
+local/*/db/install.xml
+local/*/_backup/
+local/*/_restore/
+local/*/yui/build/
+
+# Dependencies
+node_modules/
+vendor/
+composer.lock
+
+# Build artifacts
+build/
+dist/
+*.min.js
+*.min.css
+
+# Logs and temp files
+*.log
+*.tmp
+*.swp
+
+# Environment
+.env
+.env.local
+*.env.*
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Cache
+.cache/
+*.cache
+```
